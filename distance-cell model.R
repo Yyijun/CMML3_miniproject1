@@ -1,3 +1,5 @@
+# This code was adapted from https://learn.intl.zju.edu.cn/bbcswebdav/pid-126803-dt-content-rid-1813083_1/xid-1813083_1 provided by Prof. Luksys
+
 run_trial <- function(weights0, Wmult, sigma_dc, sigma_ac, DC, Vdecay, ac_const, beta, etdecay, lrate, discf, noise, platform_x, platform_y, starting_x, starting_y, speed, wall_pun)
 {
   # FIXED PARAMETERS OF THE EXPERIMENT
