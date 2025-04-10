@@ -246,7 +246,7 @@
   hitwall <- c(0,0)#punishment for hitting the wall [0..1]
   speed <- c(0.175,0.175) #mouse speed (m/s) [0.1..0.25]
   
-  weight_wall = 0.9
+  weight_wall = 0.4
   weight_place = 1 - weight_wall
   
   
@@ -344,8 +344,8 @@
         for (trial in 1:Ntrials){
           
           # fix or variable platform
-          whichplatform = 1 # fix
-          # whichplatform=sample(c(1,-1),1) # variable
+          # whichplatform = 1 # fix
+          whichplatform=sample(c(1,-1),1) # variable
           
           idx <- idxs[trial] #take each location
           starting_x <- starting_xs[idx]
@@ -575,8 +575,8 @@
           for (trial in 1:Ntrials){
             
             # fix or variable platform
-            whichplatform = 1 # fix
-            # whichplatform=sample(c(1,-1),1) # variable
+            # whichplatform = 1 # fix
+            whichplatform=sample(c(1,-1),1) # variable
             
             idx <- idxs[trial] #take each location
             starting_x <- starting_xs[idx]
@@ -626,7 +626,7 @@
     wall_zone = cbind(day,wall_zone)
     all = cbind(latency,dist[,2],target_quadrant[,2],opposite_quadrant[,2],wall_zone[,2])
     colnames(all)=c("day","latency","dist","target_quadrant","opposite_quadrant","wall_zone")
-    write.csv(all,"fixed_wall_0.9.csv")
+    write.csv(all,"variable_wall_0.4.csv")
   }
   
 
