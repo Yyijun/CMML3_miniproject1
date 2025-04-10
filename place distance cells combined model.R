@@ -91,10 +91,10 @@
       ASrand <- runif(1) # c
       which <- 1 # c
       ASsum <- ACsel[1]# c
-      # adding for error message
-      ASsum <- max(ASsum, 1e-100) 
-      N_ac <- max(N_ac, +1e-100)
-      ASrand <- max(ASrand, +1e-100)
+      # adding for the error message (do not need if there is not an error)
+      # ASsum <- max(ASsum, 1e-100) 
+      # N_ac <- max(N_ac, +1e-100)
+      # ASrand <- max(ASrand, +1e-100)
       
       while (which < N_ac & ASsum <= ASrand){# c
         which <- which + 1
