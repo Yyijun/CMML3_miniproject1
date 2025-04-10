@@ -1,4 +1,5 @@
-  # ======================= run trial function =======================
+# This code was adapted from https://learn.intl.zju.edu.cn/bbcswebdav/pid-126803-dt-content-rid-1813084_1/xid-1813084_1 provided by Prof. Luksys
+# ======================= run trial function =======================
   run_trial <- function(weights0_pc, weights0_dc, Wmult, sigma_pc, sigma_dc, sigma_ac, PC_x, PC_y, DC, Vdecay, ac_const, beta, etdecay, lrate, discf, noise, platform_x, platform_y, starting_x, starting_y, speed, wall_pun, weight_wall, weight_place)# c
   {
     # FIXED PARAMETERS OF THE EXPERIMENT
